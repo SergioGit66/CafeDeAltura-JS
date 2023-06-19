@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café de Altura - Home</title>
+    <!----------------------------- Icono Web ----------------------------->
+    <link rel="shortcut icon" href="../assets/img/logoWeb.png" type="image/x-icon">
+    <!----------------------------- Styles ----------------------------->
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/checkout.css">
+    <link rel="stylesheet" href="../assets/cest.css">
+    <!----------------------------- Google Fonts ----------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <!------------------------------- Google Icons ------------------------------->
+    <script src="https://kit.fontawesome.com/3c3ce1386d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+     <!------------------------------------- HEADER ------------------------------------->
+     <div class="body-container">
+        <header id="header">
+            <div class="logo">
+                <a href="../index.html">
+                    <p>cafedealtura.com </p>
+                    <img src="../assets/img/iconcafelogo.svg" alt="icon-coffee">
+                </a>
+            </div>
+            <div class="links">
+                <a href="./tienda.html" class="active">Tienda</a>
+                <a href="#">Suscripción</a>
+                <a href="#">Para empresas</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="telephone">
+                <img src="../assets/img/telephone.svg" alt="phone svg">
+                <p> +34 919 49 05 18</p>
+            </div>
+            <a href="#" class="session">Iniciar sesión</a>
+            <a href="./cesta.html"><img id="bag" src="../assets/img/shop.svg" alt="bag svg"></a>
+            <div class="numberCest">
+                <span id="cuantityChest"></span>
+            </div>
+        </header>
+
+        <!--------------------- CHECKOUT --------------------->
+        <div class="checkout-container">
+            <h2>Checkout</h2>
+            <div class="checkout-frame">
+                <div id="product-table">
+                    <h3>Seleccionar método de pago</h3>
+                    <div class="shipping">
+                        <div class="radio-container">
+                            <input checked type="radio" name="radio" id="radio" value="debit">
+                        </div>
+                        <label for="radio" class="details-shipping">
+                            <p class="ship">Tarjeta de débito</p>
+                            <p class="standard">Opción estándar sin seguimiento</p>
+                        </label>
+                    </div>
+                    <form class="pay-info">
+                        <div class="user-payInfo">
+                            <label for="payName">Titular</label>
+                            <input type="text" name="payName" id="payName" placeholder="Nombre del titular">
+                        </div>
+                        <div class="user-payInfo">
+                            <label for="payNumber">Número de la tarjeta</label>
+                            <input type="number" name="payNumber" id="payNumber" placeholder="1234 1234 1234 1234">
+                        </div>
+                        <div class="cad-cvc">
+                            <div class="cad-info">
+                                <label for="cad">Feha de caducidad</label>
+                                <input pattern="\d{2}/\d{2}" type="text" name="cad" id="cad" placeholder="MM / YY">
+                            </div>
+                            <div class="cvc-info">
+                                <label for="cvc">CVC</label>
+                                <input type="number" name="cvc" id="cvc" placeholder="123">
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <div class="shipping">
+                        <div class="radio-container">
+                            <input type="radio" name="radio" id="radio" value="transfer">
+                        </div>
+                        <label for="radio" class="details-shipping">
+                            <p class="ship">Transferencia bancaria a la cuenta ES12 1234 1234 123457890</p>
+                            <p class="standard">Será necesario recibir el comprobante de la transferencia para preparar tu pedido</p>
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="shipping" id="bizum">
+                        <div class="radio-container">
+                            <input type="radio" name="radio" id="radio" value="bizum">
+                        </div>
+                        <label for="radio" class="details-shipping">
+                            <p class="ship">Bizum</p>
+                            <img src="../assets/img/bizum.svg" alt="bizum">
+                        </label>
+                    </div>
+                    <h3>Dirección de envío</h3>
+                    <form class="address-info">
+                        <div class="name-address no-frame">
+                            <label for="name-add">Nombre</label>
+                            <input type="text" name="name-add" id="name-add">
+                        </div>
+                        <div class="surname-address no-frame">
+                            <label for="surname-add">Apellidos</label>
+                            <input type="text" name="surname-add" id="surname-add">
+                        </div>
+                        <div class="phone-address no-frame">
+                            <label for="phone-add">Teléfono</label>
+                            <input type="text" name="phone-add" id="phone-add" placeholder="+34 600 6000 600">
+                        </div>
+                        <div class="email-address no-frame">
+                            <label for="email-add">Email</label>
+                            <input type="text" name="email-add" id="email-add">
+                        </div>
+                        <div class="country-address no-frame">
+                            <label for="country-add">País</label>
+                            <select name="country-add" id="country-add">
+                                <option value="0" selected disabled>Seleccionar</option>
+                                <option value="es">España</option>
+                                <option value="it">Italia</option>
+                                <option value="fr">Francia</option>
+                                <option value="sc">Suecia</option>
+                                <option value="fn">Finlandia</option>
+                                <option value="ger">Alemania</option>
+                            </select>
+                            <img src="../assets/img/chevSelect.svg" alt="">
+                        </div>
+                        <div class="poblation-cp">
+                            <div class="poblation-address">
+                                <label for="poblation-add">Población</label>
+                                <input type="text" name="poblation-add" id="poblation-add">
+                            </div>
+                            <div class="cp-address">
+                                <label for="cp-add">CP</label>
+                                <input type="text" name="cp-add" id="cp-add" placeholder="123">
+                            </div>
+                        </div>
+                        <div class="street-address">
+                            <div class="str-address">
+                                <label for="street-add">Calle</label>
+                                <input type="text" name="street-add" id="street-add">
+                            </div>
+                            <div class="number-address">
+                                <label for="num-add">Nº</label>
+                                <input type="text" name="num-add" id="num-add">
+                            </div>
+                            <div class="flat-address">
+                                <label for="flat-add">Piso</label>
+                                <input type="text" name="flat-add" id="flat-add">
+                            </div>
+                            <div class="door-address">
+                                <label for="door-add">Puerta</label>
+                                <input type="text" name="door-add" id="door-add">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="total">
+                    <div class="total-details">
+                        <h3>Total del carrito</h3>
+                        <div class="frame"></div>
+                        <div class="cest-details">
+                            <p>SUBTOTAL</p>
+                            <p id="price-productJs"></p>
+                        </div>
+                        <div class="cest-details">
+                            <p>ENVÍO</p>
+                            <p id="price-sendJs"></p>
+                        </div>
+                        <div class="frame"></div>
+                        <div class="cest3-details">
+                            <p>TOTAL</p>
+                            <p id="frame-cost"></p>
+                        </div>
+                        <p class="default-text">Incluye 3,78€ de IVA</p>
+                        <button class="checkout" id="checkout-btn">Pagar y realizar pedido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="cest-copyright">
+            <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
+        </footer>   
+
+        <script src="../src/total-checkout.js"></script>
+
+        <script>
+            const products = JSON.parse(localStorage.getItem('products'));
+
+            const countTotal = products.reduce((total, product) => {
+                return total + product.count
+            }, 0)
+
+            if(countTotal !== 0) {
+                // total cest img
+                const cestCount = document.querySelector('#cuantityChest');
+                cestCount.style.color = '#fff';
+
+                cestCount.textContent = countTotal;
+            } else {
+                const numberCest = document.querySelector('.numberCest');
+                numberCest.style.display = 'none'
+            }
+
+        </script>
+
+</body>
+</html>

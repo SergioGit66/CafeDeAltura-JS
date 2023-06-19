@@ -1,0 +1,145 @@
+body {
+    overflow-x: hidden;
+}
+
+.content-payed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 24px;
+    min-height: 1051px;
+    height: auto;
+    background: #fff;
+}
+
+hr {
+    width: 1127px;
+    border: 1px solid #E3DED7;
+}
+
+.content-payed img {
+    width: 64px;
+    height: 64px;
+}
+
+.content-payed h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2A5B45;
+}
+
+.content-payed p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    width: 346px;
+    height: 48px;
+    text-align: center;
+}
+
+.content-payed .resume {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    width: 1200px;
+    height: auto;
+    background: #F7F5F3;
+    border-radius: 10px;
+}
+
+.content-payed .resume h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.content-payed .resume .sendPayed {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 1152px;
+    height: 136px;
+}
+
+.content-payed .resume .sendPayed p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    width: 1127px;
+    height: 16px;
+}
+
+.content-payed .resume .sendPayed p span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.content-payed .resume .sendPayed .totalPayed {
+    font-weight: bold;
+}
+
+.content-payed .resume .sendPayed .defaultText {
+    font-weight: 400;
+    position: relative;
+    font-size: 12px;
+    line-height: 16px;
+    color: #515051;
+    left: 1020px;
+}
+
+.content-payed button {
+    padding: 12px 24px;
+    gap: 8px;
+    width: 158px;
+    height: 40px;
+    background: #2A5B45;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* Adding in JS */
+.listProduct {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    width: 1152px;
+    height: 55.66px;
+    justify-content: space-between;
+}
+
+.detailsProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    width: 994.34px;
+    height: 36px;
+
+}
+
+#productAddedPayed {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}

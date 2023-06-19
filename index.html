@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café de Altura - Home</title>
+    <!----------------------------- Icono Web ----------------------------->
+    <link rel="shortcut icon" href="assets/img/logoWeb.png" type="image/x-icon">
+    <!----------------------------- Styles ----------------------------->
+    <link rel="stylesheet" href="./assets/style.css">
+    <!----------------------------- Google Fonts ----------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <!------------------------------- Google Icons ------------------------------->
+    <script src="https://kit.fontawesome.com/3c3ce1386d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!------------------------------------- HEADER ------------------------------------->
+    <div class="body-container">
+        <header id="header">
+            <div class="logo">
+                <a href="../index.html">
+                    <p>cafedealtura.com </p>
+                    <img src="../assets/img/iconcafelogo.svg" alt="icon-coffee">
+                </a>
+            </div>
+            <div class="links">
+                <a href="./pages/tienda.html">Tienda</a>
+                <a href="#">Suscripción</a>
+                <a href="#">Para empresas</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="telephone">
+                <img src="assets/img/telephone.svg" alt="phone svg">
+                <p> +34 919 49 05 18</p>
+            </div>
+            <a href="#" class="session">Iniciar sesión</a>
+            <a href="pages/cesta.html"><img id="bag" src="assets/img/shop.svg" alt="bag svg"></a>
+            <div class="numberCest">
+                <span id="cuantityChest"></span>
+            </div>
+        </header>
+
+
+        <!---------------------- BANNER ---------------------->
+        <section id="hero">
+            <div class="wrapper">
+                <div class="text-content">
+                    <h3>De la planta a tu taza</h3>
+                    <h1>El mejor café del mundo, ahora en tu casa.</h1>
+                    <p>Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que puedas viajar desde la comodidad de tu hogar.</p>
+                    <div class="buttons-wrapper">
+                        <button id="origin">Descubrir orígenes</button>
+                        <button id="buy">Comprar café</button>
+                    </div>
+                </div>
+                <img src="assets/img/hero.svg" alt="hero" id="hero-img">
+            </div>
+        </section>
+
+        <!---------------------- CARDS 1 ---------------------->
+        <section id="cards1">
+            <h2>Café con las mejores condiciones</h2>
+            <div class="card-wrapper">
+                <article class="card-item">
+                    <img src="assets/img/card1-1.svg" alt="card1">
+                    <h3>Recibe tu pedido sin preocuparte</h3>
+                    <p>Tienes cosas más importantes en la cabeza, por eso con nuestra suscripción de café, nunca te quedarás sin tu taza de la mañana. </p>
+                </article>
+                <article class="card-item">
+                    <img src="assets/img/card1-2.svg" alt="card2">
+                    <h3>Envío en 24/48h</h3>
+                    <p>Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
+                </article>
+                <article class="card-item">
+                    <img src="assets/img/card1-3.svg" alt="card3">
+                    <h3>Descuentos y beneficios</h3>
+                    <p>Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para que lo descubras junto a nosotros.</p>
+                </article>
+            </div>
+        </section>
+
+        <!---------------------- CARDS 2 ---------------------->
+
+        <section id="cards2">
+            <h2>Novedades</h2>
+            <div class="card-wrapper2">
+                <div class="wrapper-item">
+                    <img src="assets/img/tarrazu.svg" alt="tarrazú">
+                    <div class="product-info">
+                        <h4 class="button-text">Costa Rica Tarrazú</h4>
+                        <p>9,00 €</p>
+                    </div>
+                    <button onclick="location.href='./pages/tienda.html'">Añadir</button>
+                </div>
+                <div class="wrapper-item">
+                    <img src="assets/img/naranjos.svg" alt="naranjos">
+                    <div class="product-info">
+                        <h4 class="button-text">Colombia Los Naranjos</h4>
+                        <p>9,00 €</p>
+                    </div>
+                    <button onclick="location.href='./pages/tienda.html'">Añadir</button>
+                </div>
+                <div class="wrapper-item">
+                    <img src="assets/img/amanecer.svg" alt="amanecer">
+                    <div class="product-info">
+                        <h4 class="button-text">Laos Amanecer</h4>
+                        <p>9,00 €</p>
+                    </div>
+                    <button onclick="location.href='./pages/tienda.html'">Añadir</button>
+                </div>
+                <div class="wrapper-item">
+                    <img src="assets/img/yrgacheff.svg" alt="yrgacheff">
+                    <div class="product-info">
+                        <h4 class="button-text">Etiopía Yrgacheff</h4>
+                        <p>9,00 €</p>
+                    </div>
+                    <button onclick="location.href='./pages/tienda.html'">Añadir</button>
+                </div>
+            </div>
+            <div class="links-icons">
+                <a href="#">Ver todos</a>
+                <img src="assets/img/Arrow narrow right.svg" alt="arrow">
+            </div>
+        </section>
+
+        <!------------------------ FAQs ------------------------>
+        <section id="faqs">
+            <h2>Preguntas frecuentes</h2>
+            <div class="faq-wrapper">
+                <div class="frame"></div>
+                <article class="faq-card">
+                    <div class="title-chev">
+                        <h3>¿Cómo hago el pedido?</h3>
+                        <img class="chevron" src="assets/img/Chevron up.svg" alt="chevron">
+                    </div>
+                    <hr class="divider">
+                    <small>
+                        Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te preguntaremos cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café.
+                    </small>
+                </article>
+                <article class="faq-card" id="faq2">
+                    <div class="title-chev">
+                        <h3>¿Por qué los precios son tan bajos?</h3>
+                        <img class="chevron" src="assets/img/Chevron up.svg" alt="chevron">
+                    </div><hr class="divider">
+                    <small>
+                        Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si podemos ofrecerte estos precios es porque tratamos directamente con los productores de café, sin intermediarios. Así obtenemos el mejor precio para ti y la persona que está detrás de los granos de café recibe el mayor beneficio posible.
+                    </small>
+                </article>
+                <article class="faq-card">
+                    <div class="title-chev">
+                        <h3>¿Por qué los precios son tan bajos?</h3>
+                        <img class="chevron" src="assets/img/Chevron up.svg" alt="chevron">
+                    </div>
+                    <hr class="divider">
+                    <small>Porque podemos</small>
+                </article>
+            </div>
+            <div class="link-ic">
+                <a href="#">Resolvemos tus dudas</a>
+                <img src="assets/img/Arrow narrow right white.svg" alt="arrow white">
+            </div>
+        </section>
+
+        <!----------------- COFFEE SHOP ----------------->
+        <section id="coffeShop">
+            <div class="coffe-wrapper">
+                <div class="coffeText-content">
+                    <h2>Pruébalo en nuestro coffee shop</h2>
+                    <p>Visita nuestra cafetería en el centro de la ciudad para probar los granos de café antes de hacer tu pedido y llévate un descuento</p>
+                    <div class="linkAnd-icon">
+                        <a href="#">Cómo llegar</a>
+                        <img src="assets/img/Arrow narrow right.svg" alt="arrow right">
+                    </div>
+                </div>
+                <img src="assets/img/coffe.svg" alt="coffe hero">
+            </div>
+        </section>
+
+        <!----------------------- FORM ----------------------->
+        <section id="form-section">
+            <div class="leading-content">
+                <article class="contact-section">
+                    <header class="contact-header">
+                        <h3>Entra en contacto con nosotros</h3>
+                        <p>Si tienes dudas, ponte en contacto con nosotros a través del formulario y te responderemos lo antes posible.</p>
+                    </header>
+                    <section class="contact-text">
+                        <p>También puedes ponerte en contacto con nostros en nuestra dirección o a través del teléfono de la tienda.</p>
+                        <div class="address">
+                            <p>742 Evergreen Terrace</p>
+                            <p>Springfield, OR 12345</p>
+                        </div>
+                        <div class="details">
+                            <div class="phone">
+                                <img src="assets/img/greyphone.svg" alt="phone">
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                            <div class="email">
+                                <img src="assets/img/Mail.svg" alt="mail">
+                                <p>support@example.com</p>
+                            </div>
+                        </div>
+                        <p>¿Buscas un trabajo? <a href="#">Ver nuestras ofertas.</a></p>
+                    </section>
+                </article>
+                <section class="form-section">
+                    <form action="">
+                        <div class="nameForm">
+                            <label for="nameForm">Nombre completo</label>
+                            <input type="text" name="nameForm" id="nameForm" required>
+                        </div>
+                        <div class="emailForm">
+                            <label for="emailForm">Email</label>
+                            <input type="email" name="emailForm" id="emailForm" required>
+                        </div>
+                        <div class="telephoneForm">
+                            <label for="phoneForm">Teléfono</label>
+                            <div class="input-phone">
+                                <select name="numbersPhone" id="opt">
+                                    <option value="us">US</option>
+                                    <option value="es">ES</option>
+                                    <option value="gr">GR</option>
+                                    <option value="fr">FR</option>
+                                    <option value="it">IT</option>
+                                </select>
+                                <input type="number" name="numbersPhone" id="numbersPhone" placeholder="+1 (555) 987-6543" required minlength="8" maxlength="11">
+                            </div>
+                        </div>
+                        <div class="textArea">
+                            <label for="textareaForm"></label>
+                            <textarea name="textareaForm" id="textareaForm" cols="30" rows="10" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                        </div>
+                        <div class="checkTerms">
+                            <input type="checkbox" name="checkForm" id="checkForm" value="acept">
+                            <label for="checkForm"><a href="#">Acepto la <span id="strong">Política de Privacidad</span> y los <span id="strong">Términos y condiciones.</span></a></label>
+                        </div>
+                        <button type="submit" id="buttonForm">Enviar</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+
+        <!----------------------- FOOTER ----------------------->
+        <footer id="footer">
+            <div class="footer-wrapper">
+                <div class="logo">
+                    <p>cafedealtura.com </p>
+                    <img src="assets/img/iconcafelogo.svg" alt="icon-coffee">
+                </div>
+                <div class="links-contact">
+                    <div class="contact-wrapper">
+                        <h3>Te ayudamos en</h3>
+                        <button>
+                            <div class="link-button">
+                                <img src="assets/img/telephone.svg" alt="phone-footer">
+                                <p>+34 919 49 05 18</p>
+                            </div>
+                        </button>
+                        <button class="mail-button">
+                            <div class="link-button2">
+                                <img src="assets/img/mailwhite.svg" alt="phone-footer">
+                                <p>hola@cafedealtura.com</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="menu-wrapper">
+                        <a href="pages/tienda.html" target="_blank">Tienda</a>
+                        <a href="#">Suscripción</a>
+                        <a href="#">Para empresas</a>
+                        <a href="#">Sobre nosotros</a>
+                        <a href="#">Contacto</a>
+                    </div>
+                    <div class="menu-politics">
+                        <a href="#">Política de privacidad</a>
+                        <a href="#">Política de cookies</a>
+                        <a href="#">Términos y condiciones</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./src/index.js"></script>
+    <script src="./src/form.js"></script>
+
+    <script>
+        const products = JSON.parse(localStorage.getItem('products'));
+
+            const countTotal = products.reduce((total, product) => {
+                return total + product.count
+            }, 0)
+
+            if(countTotal !== 0) {
+                // total cest img
+                const cestCount = document.querySelector('#cuantityChest');
+                cestCount.style.color = '#fff';
+
+                cestCount.textContent = countTotal;
+            } else {
+                const numberCest = document.querySelector('.numberCest');
+                numberCest.style.display = 'none'
+            }
+
+    </script>
+
+
+</body>
+</html>

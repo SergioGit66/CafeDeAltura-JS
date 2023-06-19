@@ -1,0 +1,273 @@
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 24px;
+    height: 1108px;
+    background: #FFFFFF;
+}
+
+.checkout-container h2 {
+    color: #2A5B45;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.checkout-container .checkout-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    height: 972px;
+    width: 1200px;
+}
+
+.checkout-container .checkout-frame #product-table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 24px;
+    width: 792px;
+    height: 972px;
+    background-color: #fff;
+}
+
+.checkout-container .checkout-frame #product-table hr {
+    width: 776px;
+    border: 1px solid #E3DED7;
+}
+
+.checkout-container .checkout-frame #product-table h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.checkout-container .checkout-frame #product-table .shipping {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    width: 776px;
+    height: 36px;
+}
+
+.checkout-container .checkout-frame #product-table #bizum label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    height: 30px;
+}
+
+.checkout-container .checkout-frame #product-table .shipping .radio-container {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2A5B45;
+    border-radius: 50%;
+    position: relative;
+}
+
+.checkout-container .checkout-frame #product-table .shipping .radio-container input {
+    appearance: none;
+    border: 1px solid #555555;
+    border-radius: 50%;
+    width: 16.5px;
+    height: 16.5px;
+}
+
+.checkout-container .checkout-frame #product-table .shipping .radio-container input[type='radio']:checked {
+    background-color: #2A5B45;
+    border-color: #fff;
+}
+
+.checkout-container .checkout-frame #product-table .shipping label {
+    margin-left: 5px;
+    width: 657px;
+}
+
+.checkout-container .checkout-frame #product-table .shipping label .ship {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.checkout-container .checkout-frame #product-table .shipping label .standard {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.checkout-container .checkout-frame #product-table .pay-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 279px;
+    height: 181px;
+}
+
+.checkout-container .checkout-frame #product-table .pay-info .user-payInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    height: 55px;
+}
+
+.checkout-container .checkout-frame #product-table .pay-info .user-payInfo label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.checkout-container .checkout-frame #product-table .pay-info .user-payInfo input {
+    padding: 10px 8px;
+    gap: 8px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.checkout-container .checkout-frame #product-table .pay-info .cad-cvc {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    height: 55px;
+}
+
+.checkout-container .checkout-frame #product-table .pay-info .cad-cvc div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    height: 55px;
+}
+
+.checkout-container .checkout-frame #product-table .pay-info .cad-cvc div label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.checkout-container .checkout-frame #product-table .pay-info .cad-cvc div input {
+    padding: 10px 8px;
+    gap: 8px;
+    width: 127.5px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.checkout-container .checkout-frame #product-table .address-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 521px;
+    height: 433px;
+}
+
+.checkout-container .checkout-frame #product-table .address-info .no-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    height: 55px;
+}
+
+.checkout-container .checkout-frame #product-table .address-info .no-frame label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.checkout-container .checkout-frame #product-table .address-info .no-frame input, select {
+    padding: 10px 8px;
+    gap: 8px;
+    width: 521px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.checkout-container .checkout-frame #product-table .address-info .no-frame select {
+    appearance: none;
+}
+
+.checkout-container .checkout-frame #product-table .address-info .country-address {
+    position: relative;
+}
+
+.checkout-container .checkout-frame #product-table .address-info .country-address img {
+    position: absolute;
+    top: 33px;
+    left: 494px;
+    width: 14px;
+}
+
+.checkout-container .checkout-frame #product-table .address-info .poblation-cp, .street-address {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    width: 521px;
+    height: 55px;
+}
+
+.checkout-container .checkout-frame #product-table .address-info .poblation-cp div, .street-address div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    width: 248.5px;
+    height: 55px;
+}
+
+.checkout-container .checkout-frame #product-table .address-info .poblation-cp div label, .street-address div label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.checkout-container .checkout-frame #product-table .address-info .poblation-cp div input {
+    padding: 10px 8px;
+    gap: 8px;
+    width: 248.5px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.checkout-container .checkout-frame #product-table .address-info .street-address div input {
+    padding: 10px 8px;
+    gap: 8px;
+    width: 112.25px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.checkout-container .checkout-frame .total .total-details #checkout-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 196px;
+    height: 40px;
+    background: #2A5B45;
+    opacity: 0.3;
+    border-radius: 4px;
+    cursor: not-allowed;
+}

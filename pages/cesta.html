@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café de Altura - Cesta</title>
+    <!----------------------------- Icono Web ----------------------------->
+    <link rel="shortcut icon" href="../assets/img/logoWeb.png" type="image/x-icon">
+    <!----------------------------- Styles ----------------------------->
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/cest.css">
+    <!----------------------------- Google Fonts ----------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <!------------------------------- Google Icons ------------------------------->
+    <script src="https://kit.fontawesome.com/3c3ce1386d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!------------------------------------- HEADER ------------------------------------->
+    <div class="body-container">
+        <header id="header">
+            <div class="logo">
+                <a href="../index.html">
+                    <p>cafedealtura.com </p>
+                    <img src="../assets/img/iconcafelogo.svg" alt="icon-coffee">
+                </a>
+            </div>
+            <div class="links">
+                <a href="./tienda.html" class="active">Tienda</a>
+                <a href="#">Suscripción</a>
+                <a href="#">Para empresas</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="telephone">
+                <img src="../assets/img/telephone.svg" alt="phone svg">
+                <p> +34 919 49 05 18</p>
+            </div>
+            <a href="#" class="session">Iniciar sesión</a>
+            <img id="bag" src="../assets/img/shop.svg" alt="bag svg">
+            <div class="numberCest">
+                <span id="cuantityChest"></span>
+            </div>
+        </header>
+
+        <!------------------------- CESTA ------------------------->
+        <section class="cest">
+            <h2>Cesta <span id="cuantity"></span></h2>
+            <div class="cest-container">
+                <div class="products">
+                    <h3>Productos</h3>
+                    <div class="productAdded"></div>
+                    <h3>Seleccionar envío</h3>
+                    <div class="shipping">
+                        <div class="radio-container">
+                            <input checked type="radio" name="radio" id="radio" value="free">
+                        </div>
+                        <label class="details-shipping">
+                            <p class="ship">Envío 5-7 días</p>
+                            <p class="standard">Opción estándar sin seguimiento</p>
+                        </label>
+                        <h3>GRATIS</h3>
+                    </div>
+                    <div class="frame"></div>
+                    <div class="shipping">
+                        <div class="radio-container">
+                            <input type="radio" name="radio" id="radio" value="urgent">
+                        </div>
+                        <label for="radio" class="details-shipping">
+                            <p class="ship">Envío urgente 24h</p>
+                            <p class="standard">Recibe tu pedido en las siguientes 24h (Para pedidos realizados antes de las 13:00).</p>
+                        </label>
+                        <h3>9,00€</h3>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="total-details">
+                        <h3>Total del carrito</h3>
+                        <div class="frame"></div>
+                        <div class="cest-details">
+                            <p>SUBTOTAL</p>
+                            <p id="price-productJs"></p>
+                        </div>
+                        <div class="cest-details">
+                            <p>ENVÍO</p>
+                            <p id="price-sendJs"></p>
+                        </div>
+                        <div class="frame"></div>
+                        <div class="cest3-details">
+                            <p>TOTAL</p>
+                            <p id="frame-cost"></p>
+                        </div>
+                        <p class="default-text">Incluye 3,78€ de IVA</p>
+                        <div class="button-wrapper">
+                            <button onclick="location.href='checkout.html'" class="checkout" id="checkout-pay">Ir a checkout</button>
+                            <button onclick="location.href='tienda.html'" class="still-buying">Seguir comprando</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="cest-copyright">
+            <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
+        </footer>
+
+
+
+        <script src="../src/cest.js"></script>
+
+    </body>
+</html>

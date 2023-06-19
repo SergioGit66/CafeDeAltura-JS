@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café de Altura - Home</title>
+    <!----------------------------- Icono Web ----------------------------->
+    <link rel="shortcut icon" href="../assets/img/logoWeb.png" type="image/x-icon">
+    <!----------------------------- Styles ----------------------------->
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/payed.css">
+    <link rel="stylesheet" href="../assets/cest.css">
+    <!----------------------------- Google Fonts ----------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <!------------------------------- Google Icons ------------------------------->
+    <script src="https://kit.fontawesome.com/3c3ce1386d.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+
+    <!------------------------------------- HEADER ------------------------------------->
+    <div class="body-container">
+        <header id="header">
+            <div class="logo">
+                <a href="../index.html">
+                    <p>cafedealtura.com </p>
+                    <img src="../assets/img/iconcafelogo.svg" alt="icon-coffee">
+                </a>
+            </div>
+            <div class="links">
+                <a href="./tienda.html" class="active">Tienda</a>
+                <a href="#">Suscripción</a>
+                <a href="#">Para empresas</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="telephone">
+                <img src="../assets/img/telephone.svg" alt="phone svg">
+                <p> +34 919 49 05 18</p>
+            </div>
+            <a href="#" class="session">Iniciar sesión</a>
+            <a href="./cesta.html"><img id="bag" src="../assets/img/shop.svg" alt="bag svg"></a>
+        </header>
+
+        <!----------------------- CONTENT ----------------------->
+        <section class="content-payed">
+            <img src="../assets/img/payedlogo.svg" alt="payed">
+            <h2>El pedido ha sido realizado con éxito</h2>
+            <p>El pedido #12387 se encuentra en preparación.
+                Lo recibirás dentro de las fechas acordadas en tu envío.
+                Hemos enviado un ticket a tu correo electrónico.
+            </p>
+            <article class="resume">
+                <h3>Tu pedido</h3>
+                <div id="productAddedPayed"></div>
+                <hr>
+                <div class="sendPayed">
+                    <p class="subtotalPayed">SUBTOTAL <span id="subtotalPayedSpan"></span></p>
+                    <p class="sendPayed">ENVÍO <span id="sendPayedSpan"></span></p>
+                    <hr>
+                    <p class="totalPayed">TOTAL <span id="totalPayedSpan"></span></p>
+                    <p class="defaultText">Incluye 3,78€ de IVA</p>
+                </div>
+            </article>
+            <button>Volver a la tienda</button>
+        </section>
+
+        <footer class="cest-copyright">
+            <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
+        </footer>
+
+
+        <script src="../src/payed.js"></script>
+
+
+
+    
+</body>
+</html>
